@@ -12,14 +12,14 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+      <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="logo">
           <a class="navbar-brand" href="../index.html">
             <img src="../images/logo.png" alt="Logo de la Liga X" />
           </a>
         </div>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler custom-navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -27,7 +27,8 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <p>__</p>
+          <!-- cambiar esto -->
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
@@ -47,13 +48,17 @@
                 Torneos
               </a>
               <div
-                class="dropdown-menu"
+                class="dropdown-menu custom-dropdown-menu"
                 aria-labelledby="navbarDropdownTorneos"
               >
-                <a class="dropdown-item" href="torneo-lunes.html"
+                <a
+                  class="dropdown-item custom-dropdown-item"
+                  href="torneo-lunes.html"
                   >Torneo Lunes</a
                 >
-                <a class="dropdown-item" href="torneo-sabado.html"
+                <a
+                  class="dropdown-item custom-dropdown-item"
+                  href="torneo-sabado.html"
                   >Torneo Sábado</a
                 >
               </div>
@@ -71,26 +76,30 @@
         </div>
       </nav>
     </header>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <main>
-      <section class="contacto">
-        <h2>Contacto</h2>
-        <form>
-          <label for="nombre">Nombre:</label><br />
-          <input type="text" id="nombre" name="nombre" /><br />
-          <label for="email">Correo electrónico:</label><br />
-          <input type="email" id="email" name="email" /><br />
-          <label for="telefono">Número de teléfono:</label><br />
-          <input type="tel" id="telefono" name="telefono" /><br />
-          <label for="mensaje">Mensaje:</label><br />
-          <textarea id="mensaje" name="mensaje"></textarea><br />
-          <input type="submit" value="Enviar" />
-        </form>
-        <!-- falta agregar mapa, logos de redes con logo y link -->
-      </section>
+      <div class="contacto-grid">
+        <div>
+          <h2>Contacto</h2>
+          <form>
+            <label for="nombre">Nombre:</label><br />
+            <input type="text" id="nombre" name="nombre" /><br />
+            <label for="email">Correo electrónico:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="telefono">Número de teléfono:</label><br />
+            <input type="tel" id="telefono" name="telefono" /><br />
+            <label for="mensaje">Mensaje:</label><br />
+            <textarea id="mensaje" name="mensaje"></textarea><br />
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+
+        <div>
+          <!-- falta agregar mapa, logos de redes con logo y link -->
+        </div>
+      </div>
     </main>
     <footer>
       <p>&copy; 2024 Liga X. Todos los derechos reservados.</p>

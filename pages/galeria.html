@@ -12,14 +12,14 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+      <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="logo">
           <a class="navbar-brand" href="../index.html">
             <img src="../images/logo.png" alt="Logo de la Liga X" />
           </a>
         </div>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler custom-navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -27,7 +27,8 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <p>__</p>
+          <!-- cambiar esto -->
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
@@ -47,13 +48,17 @@
                 Torneos
               </a>
               <div
-                class="dropdown-menu"
+                class="dropdown-menu custom-dropdown-menu"
                 aria-labelledby="navbarDropdownTorneos"
               >
-                <a class="dropdown-item" href="torneo-lunes.html"
+                <a
+                  class="dropdown-item custom-dropdown-item"
+                  href="torneo-lunes.html"
                   >Torneo Lunes</a
                 >
-                <a class="dropdown-item" href="torneo-sabado.html"
+                <a
+                  class="dropdown-item custom-dropdown-item"
+                  href="torneo-sabado.html"
                   >Torneo Sábado</a
                 >
               </div>
@@ -71,15 +76,14 @@
         </div>
       </nav>
     </header>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <main>
-      <section>
+      <div class="galeria">
         <h2>Galería</h2>
         <!-- se va a modificar para poder elegir de que torneo ver fotos -->
-        <h3>Fecha 1</h3>
+        <h5>Fecha 1</h5>
         <!-- agregar link a Drive con todas la fotos -->
         <div class="imagenes">
           <img src="../images/imagen1.jpg" alt="Imagen 1" />
@@ -87,7 +91,7 @@
           <img src="../images/imagen3.jpg" alt="Imagen 3" />
           <img src="../images/imagen4.jpg" alt="Imagen 4" />
         </div>
-        <h3>Fecha 2</h3>
+        <h5>Fecha 2</h5>
         <!-- agregar link a Drive con todas la fotos -->
         <div class="imagenes">
           <img src="../images/imagen5.jpg" alt="Imagen 5" />
@@ -95,7 +99,7 @@
           <img src="../images/imagen7.jpg" alt="Imagen 7" />
           <img src="../images/imagen8.jpg" alt="Imagen 8" />
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <p>&copy; 2024 Liga X. Todos los derechos reservados.</p>

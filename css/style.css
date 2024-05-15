@@ -5,8 +5,19 @@ body {
   margin: 0;
   padding: 0;
 }
+h2 {
+  color: #23d6e8; /* encabezados */
+}
+h5 {
+  color: #000000; /* subtítulos */
+}
+
+/* navbar de boostrap customizado */
 .logo img {
   max-width: 120px; /* logo tamaño */
+}
+.custom-navbar {
+  background-color: #000000;
 }
 .custom-navbar.navbar .navbar-brand,
 .custom-navbar.navbar .navbar-nav .nav-link {
@@ -17,25 +28,50 @@ body {
   color: #23d6e8;
 }
 
-section {
+/* secccion torneos igual que nav principal */
+.custom-dropdown-menu.dropdown-menu,
+.custom-dropdown-item.dropdown-item {
+  background-color: #000000;
+  color: #ffffff;
+}
+.custom-dropdown-menu.dropdown-menu:hover,
+.custom-dropdown-item.dropdown-item:hover {
+  background-color: #000000;
+  color: #23d6e8;
+}
+
+/* cambios menu hamburguesa version pantallas peq */
+.custom-navbar-toggler.navbar-toggler {
+  border-color: #23d6e8;
+  color: #fff;
+  padding: 10px 20px;
+}
+.custom-navbar-toggler.navbar-toggler:hover {
+  background-color: #23d6e8;
+}
+
+/* stlye footer */
+footer {
+  background-color: #23d6e8; /* backg footer */
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+/* grid pages y otro */
+.noticias-grid,
+.nosotros-grid,
+.torneos-grid,
+.contacto-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   padding: 20px;
 }
 
-h2 {
-  color: #23d6e8; /* encabezados */
+.noticias,
+.galeria {
+  padding: 20px;
 }
-
-h3 {
-  color: #000000; /* subtítulos */
-}
-
-.noticias-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-}
-
 .noticia {
   border: 1px solid #ccc; /* brde de las noticias */
   padding: 20px;
@@ -45,17 +81,12 @@ h3 {
   width: 100%;
 }
 
-footer {
-  background-color: #23d6e8; /* backg footer */
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
 .imagenes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .imagenes img {
@@ -66,41 +97,39 @@ footer {
 .nosotros {
   padding: 20px;
 }
-.nosotros-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.torneos-grid {
+/* estructura torneos y tablas */
+.tabla-posiciones {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
+  min-width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
 }
-
-.tabla-posiciones table,
-.tabla-fixture table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
 .tabla-posiciones th,
 .tabla-posiciones td,
 .fixture th,
 .fixture td {
   border: 1px solid #ccc;
-  padding: 8px;
+  padding: 0px;
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+/* mq para pantallas pequeñas */
+@media (max-width: 768px) {
   .torneos-grid,
   .noticias-grid,
-  .nosotros-grid,
-  .imagenes img {
-    display: inline;
+  .nosotros-grid {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    float: none;
+  }
+  .imagenes img {
+    width: 100%;
+    height: auto;
+  }
+  .torneos-grid {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }

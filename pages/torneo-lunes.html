@@ -12,14 +12,14 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+      <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="logo">
           <a class="navbar-brand" href="../index.html">
             <img src="../images/logo.png" alt="Logo de la Liga X" />
           </a>
         </div>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler custom-navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -27,7 +27,8 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <p>__</p>
+          <!-- cambiar esto -->
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
@@ -47,13 +48,17 @@
                 Torneos
               </a>
               <div
-                class="dropdown-menu"
+                class="dropdown-menu custom-dropdown-menu"
                 aria-labelledby="navbarDropdownTorneos"
               >
-                <a class="dropdown-item" href="torneo-lunes.html"
+                <a
+                  class="dropdown-item custom-dropdown-item"
+                  href="torneo-lunes.html"
                   >Torneo Lunes</a
                 >
-                <a class="dropdown-item" href="torneo-sabado.html"
+                <a
+                  class="dropdown-item custom-dropdown-item"
+                  href="torneo-sabado.html"
                   >Torneo Sábado</a
                 >
               </div>
@@ -71,17 +76,15 @@
         </div>
       </nav>
     </header>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <main>
-      <section>
-      <h4>Estadísticas Torneo Sábado</h4>
-      <section class="torneos-grid">
-        <section class="posiciones">
+      <div class="torneos-grid">
+        <div class="posiciones">
+          <h5>Estadísticas Torneo Lunes</h5>
           <h2>Tabla de Posiciones</h2>
-          <section class="tabla-posiciones">
+          <div class="tabla-posiciones">
             <table class="table table-hover">
               <thead>
                 <tr>
@@ -144,11 +147,12 @@
                 </tr>
               </tbody>
             </table>
-          </section>
-        </section>
-        <section class="fixture">
+          </div>
+        </div>
+        <div class="fixture">
+          <h5>Fecha 11</h5>
           <h2>Fixture</h2>
-          <section class="tabla-fixture">
+          <div class="tabla-fixture">
             <table class="table table-hover">
               <thead>
                 <tr>
@@ -167,14 +171,12 @@
                   <td>Equipo 2 vs Equipo 4</td>
                   <td>15:00 hs.</td>
                   <td>Cancha 2</td>
-
                 </tr>
               </tbody>
             </table>
-          </section>
-        </section>
-      </section>
-      <section>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <p>&copy; 2024 Liga X. Todos los derechos reservados.</p>
