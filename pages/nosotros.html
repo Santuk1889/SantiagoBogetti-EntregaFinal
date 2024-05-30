@@ -9,17 +9,23 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="logo">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../images/logo.png" alt="Logo de la Liga X" />
-          </a>
-        </div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            class="imagen-zoom"
+            src="../images/logo.png"
+            alt="Logo de la Liga X"
+          />
+        </a>
         <button
-          class="navbar-toggler custom-navbar-toggler"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -48,17 +54,13 @@
                 Torneos
               </a>
               <div
-                class="dropdown-menu custom-dropdown-menu"
+                class="dropdown-menu"
                 aria-labelledby="navbarDropdownTorneos"
               >
-                <a
-                  class="dropdown-item custom-dropdown-item"
-                  href="torneo-lunes.html"
+                <a class="dropdown-item" href="torneo-lunes.html"
                   >Torneo Lunes</a
                 >
-                <a
-                  class="dropdown-item custom-dropdown-item"
-                  href="torneo-sabado.html"
+                <a class="dropdown-item" href="torneo-sabado.html"
                   >Torneo Sábado</a
                 >
               </div>
@@ -76,36 +78,71 @@
         </div>
       </nav>
     </header>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <main>
       <div class="nosotros">
         <div class="nosotros-grid">
           <div>
             <h2>Sobre Nosotros</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
-              nisi id velit sodales convallis. Nam nec metus nec ex lobortis
-              rutrum. Vestibulum feugiat, nisi in dignissim vulputate, tortor
-              urna scelerisque dolor, non consequat odio tortor at nunc.
+              Bienvenidos a <strong>Liga X</strong>, la liga de fútbol amateur
+              que ha sido el corazón del fútbol comunitario durante años. En
+              Liga X, vivimos y respiramos fútbol, ofreciendo a jugadores de
+              todos los niveles la oportunidad de competir, mejorar y disfrutar
+              del hermoso juego en un ambiente amigable y emocionante.
             </p>
+
+            <h3>Nuestra Historia</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              dolor at minima quo maiores corrupti qui nesciunt optio!
-              Repellendus natus libero inventore illum fugit non, vel odio
-              facere aperiam ut?
+              Fundada con la pasión por el fútbol y el deseo de crear una
+              comunidad deportiva inclusiva, Liga X ha crecido hasta convertirse
+              en una referencia en el ámbito del fútbol amateur. Desde nuestros
+              humildes comienzos, hemos trabajado incansablemente para
+              proporcionar a los jugadores un espacio donde puedan perseguir su
+              amor por el fútbol, sin importar su edad o nivel de habilidad.
             </p>
+
+            <h3>Nuestras Instalaciones</h3>
+            <p>
+              Contamos con dos predios de primer nivel, equipados con campos de
+              césped de alta calidad, iluminación adecuada para partidos
+              nocturnos y todas las comodidades necesarias para jugadores y
+              espectadores. Nuestras instalaciones están diseñadas para
+              proporcionar la mejor experiencia posible tanto dentro como fuera
+              del campo.
+            </p>
+
+            <h3>Comunidad y Valores</h3>
+            <p>
+              En Liga X, creemos en la importancia de los valores deportivos y
+              la comunidad. Fomentamos el respeto, la deportividad y la
+              inclusión, asegurándonos de que todos los participantes se sientan
+              bienvenidos y valorados. Nuestra misión es crear un entorno donde
+              el fútbol sea una fuerza positiva que una a las personas.
+            </p>
+            <p><strong>Liga X - Donde el fútbol es para todos</strong></p>
           </div>
           <div>
-            <img src="../images/nosotros.jpg" alt="Nosotros" width="100%" />
+            <img src="../images/nosotros.jpg" alt="sobre nosotros" />
           </div>
         </div>
       </div>
     </main>
     <footer>
       <p>&copy; 2024 Liga X. Todos los derechos reservados.</p>
-      <!-- agregar redes con logo y link -->
+      <div class="footer-redes">
+        <a href="https://facebook.com/" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

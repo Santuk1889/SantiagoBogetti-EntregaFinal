@@ -8,18 +8,19 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+    /><link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="logo">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../images/logo.png" alt="Logo de la Liga X" />
-          </a>
-        </div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html">
+          <img  class="imagen-zoom" src="../images/logo.png" alt="Logo de la Liga X" />
+        </a>
         <button
-          class="navbar-toggler custom-navbar-toggler"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -48,16 +49,16 @@
                 Torneos
               </a>
               <div
-                class="dropdown-menu custom-dropdown-menu"
+                class="dropdown-menu"
                 aria-labelledby="navbarDropdownTorneos"
               >
                 <a
-                  class="dropdown-item custom-dropdown-item"
+                  class="dropdown-item"
                   href="torneo-lunes.html"
                   >Torneo Lunes</a
                 >
                 <a
-                  class="dropdown-item custom-dropdown-item"
+                  class="dropdown-item"
                   href="torneo-sabado.html"
                   >Torneo Sábado</a
                 >
@@ -76,14 +77,12 @@
         </div>
       </nav>
     </header>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <main>
-      <div class="torneos-grid">
-        <div class="posiciones">
-          <h5>Estadísticas Torneo Sábado</h5>
-          <h2>Tabla de Posiciones</h2>
+      <div class="torneos">
+        <div class="torneos-grid">
+          <div class="posiciones">
+            <h2>Tabla de Posiciones</h2>
+            <h5>Estadísticas Torneo Sábado</h5>
           <div class="tabla-posiciones">
             <table class="table table-hover">
               <thead>
@@ -101,7 +100,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Equipo 1</td>
+                  <td>Dragones</td>
                   <td>10</td>
                   <td>7</td>
                   <td>2</td>
@@ -113,7 +112,7 @@
                 </tr>
                 <!-- Datos aleatorios para los otros equipos -->
                 <tr>
-                  <td>Equipo 2</td>
+                  <td>Guerreros</td>
                   <td>10</td>
                   <td>6</td>
                   <td>3</td>
@@ -124,7 +123,7 @@
                   <td>21</td>
                 </tr>
                 <tr>
-                  <td>Equipo 3</td>
+                  <td>Águilas Doradas</td>
                   <td>10</td>
                   <td>5</td>
                   <td>3</td>
@@ -135,7 +134,7 @@
                   <td>18</td>
                 </tr>
                 <tr>
-                  <td>Equipo 4</td>
+                  <td>Toros Bravos</td>
                   <td>10</td>
                   <td>5</td>
                   <td>2</td>
@@ -150,8 +149,8 @@
           </div>
         </div>
         <div class="fixture">
-          <h5>Fecha 11</h5>
           <h2>Fixture</h2>
+          <h5>Fecha 11</h5>
           <div class="tabla-fixture">
             <table class="table table-hover">
               <thead>
@@ -163,12 +162,12 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Equipo 1 vs Equipo 3</td>
+                  <td>Dragones vs Águilas Doradas</td>
                   <td>14:00 hs.</td>
                   <td>Cancha 1</td>
                 </tr>
                 <tr>
-                  <td>Equipo 2 vs Equipo 4</td>
+                  <td>Guerreros vs Toros Bravos</td>
                   <td>15:00 hs.</td>
                   <td>Cancha 2</td>
                 </tr>
@@ -180,7 +179,20 @@
     </main>
     <footer>
       <p>&copy; 2024 Liga X. Todos los derechos reservados.</p>
-      <!-- agregar redes con logo y link -->
+      <div class="footer-redes">
+        <a href="https://facebook.com/" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -9,17 +9,23 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="logo">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../images/logo.png" alt="Logo de la Liga X" />
-          </a>
-        </div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            class="imagen-zoom"
+            src="../images/logo.png"
+            alt="Logo de la Liga X"
+          />
+        </a>
         <button
-          class="navbar-toggler custom-navbar-toggler"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -48,17 +54,13 @@
                 Torneos
               </a>
               <div
-                class="dropdown-menu custom-dropdown-menu"
+                class="dropdown-menu"
                 aria-labelledby="navbarDropdownTorneos"
               >
-                <a
-                  class="dropdown-item custom-dropdown-item"
-                  href="torneo-lunes.html"
+                <a class="dropdown-item" href="torneo-lunes.html"
                   >Torneo Lunes</a
                 >
-                <a
-                  class="dropdown-item custom-dropdown-item"
-                  href="torneo-sabado.html"
+                <a class="dropdown-item" href="torneo-sabado.html"
                   >Torneo Sábado</a
                 >
               </div>
@@ -76,34 +78,89 @@
         </div>
       </nav>
     </header>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <main>
-      <div class="contacto-grid">
-        <div>
-          <h2>Contacto</h2>
-          <form>
-            <label for="nombre">Nombre:</label><br />
-            <input type="text" id="nombre" name="nombre" /><br />
-            <label for="email">Correo electrónico:</label><br />
-            <input type="email" id="email" name="email" /><br />
-            <label for="telefono">Número de teléfono:</label><br />
-            <input type="tel" id="telefono" name="telefono" /><br />
-            <label for="mensaje">Mensaje:</label><br />
-            <textarea id="mensaje" name="mensaje"></textarea><br />
-            <input type="submit" value="Enviar" />
-          </form>
-        </div>
+      <div class="contacto">
+        <div class="contacto-grid">
+          <div>
+            <div>
+              <h2>Contacto</h2>
+              <p>
+                ¿Tienes un equipo y estás listo para competir? ¡Nos encantaría
+                escucharte! Completa el siguiente formulario de contacto para
+                ponerte en contacto con nosotros y formar parte de la
+                emocionante acción de Liga X. Únete a nuestr comunidad y forma
+                parte de una liga que celebra el espíritu del fútbol amateur en
+                su forma más pura.
+              </p>
 
-        <div>
-          <!-- falta agregar mapa, logos de redes con logo y link -->
+              <form class="contacto-grid">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" />
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" />
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" />
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <input
+                  type="submit"
+                  value="Enviar"
+                  class="imagen-zoom boton-std"
+                />
+              </form>
+
+              <p>¡Esperamos verte en el campo pronto!</p>
+            </div>
+          </div>
+          <div class="contacto-redes">
+            <h2>Nuestras Redes</h2>
+            <p>
+              ¡Conéctate con nosotros en las redes sociales y sé parte de
+              nuestra vibrante comunidad futbolística!
+            </p>
+
+            <p>
+              Síguenos en nuestras redes sociales para estar al día con las
+              últimas noticias, fotos de los partidos, videos destacados y mucho
+              más. Únete a la conversación, comparte tus momentos favoritos y
+              forma parte de la emoción de Liga X.
+            </p>
+
+            <p>
+              ¡No te pierdas ni un solo momento! Encuéntranos en Facebook,
+              Instagram y WhatsApp para vivir la pasión del fútbol amateur en su
+              máxima expresión.
+            </p>
+
+            <a href="https://facebook.com/" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.whatsapp.com/" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
         </div>
       </div>
     </main>
     <footer>
       <p>&copy; 2024 Liga X. Todos los derechos reservados.</p>
-      <!-- agregar redes con logo y link -->
+      <div class="footer-redes">
+        <a href="https://facebook.com/" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -9,17 +9,23 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="logo">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../images/logo.png" alt="Logo de la Liga X" />
-          </a>
-        </div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            class="imagen-zoom"
+            src="../images/logo.png"
+            alt="Logo de la Liga X"
+          />
+        </a>
         <button
-          class="navbar-toggler custom-navbar-toggler"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -48,17 +54,13 @@
                 Torneos
               </a>
               <div
-                class="dropdown-menu custom-dropdown-menu"
+                class="dropdown-menu"
                 aria-labelledby="navbarDropdownTorneos"
               >
-                <a
-                  class="dropdown-item custom-dropdown-item"
-                  href="torneo-lunes.html"
+                <a class="dropdown-item" href="torneo-lunes.html"
                   >Torneo Lunes</a
                 >
-                <a
-                  class="dropdown-item custom-dropdown-item"
-                  href="torneo-sabado.html"
+                <a class="dropdown-item" href="torneo-sabado.html"
                   >Torneo Sábado</a
                 >
               </div>
@@ -76,111 +78,123 @@
         </div>
       </nav>
     </header>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <main>
-      <div class="torneos-grid">
-        <div class="posiciones">
-          <h5>Estadísticas Torneo Lunes</h5>
-          <h2>Tabla de Posiciones</h2>
-          <div class="tabla-posiciones">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th>Equipo</th>
-                  <th>PJ</th>
-                  <th>PG</th>
-                  <th>PE</th>
-                  <th>PP</th>
-                  <th>GF</th>
-                  <th>GC</th>
-                  <th>Dif</th>
-                  <th>Pts</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Equipo 1</td>
-                  <td>10</td>
-                  <td>7</td>
-                  <td>2</td>
-                  <td>1</td>
-                  <td>20</td>
-                  <td>10</td>
-                  <td>+10</td>
-                  <td>23</td>
-                </tr>
-                <!-- Datos aleatorios para los otros equipos -->
-                <tr>
-                  <td>Equipo 2</td>
-                  <td>10</td>
-                  <td>6</td>
-                  <td>3</td>
-                  <td>1</td>
-                  <td>18</td>
-                  <td>8</td>
-                  <td>+10</td>
-                  <td>21</td>
-                </tr>
-                <tr>
-                  <td>Equipo 3</td>
-                  <td>10</td>
-                  <td>5</td>
-                  <td>3</td>
-                  <td>2</td>
-                  <td>15</td>
-                  <td>9</td>
-                  <td>+6</td>
-                  <td>18</td>
-                </tr>
-                <tr>
-                  <td>Equipo 4</td>
-                  <td>10</td>
-                  <td>5</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>16</td>
-                  <td>14</td>
-                  <td>+2</td>
-                  <td>17</td>
-                </tr>
-              </tbody>
-            </table>
+      <div class="torneos">
+        <div class="torneos-grid">
+          <div class="posiciones">
+            <h2>Tabla de Posiciones</h2>
+            <h5>Estadísticas Torneo Lunes</h5>
+            <div class="tabla-posiciones">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Equipo</th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PE</th>
+                    <th>PP</th>
+                    <th>GF</th>
+                    <th>GC</th>
+                    <th>Dif</th>
+                    <th>Pts</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tigres</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>+10</td>
+                    <td>23</td>
+                  </tr>
+                  <!-- Datos aleatorios para los otros equipos -->
+                  <tr>
+                    <td>Halcones</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>18</td>
+                    <td>8</td>
+                    <td>+10</td>
+                    <td>21</td>
+                  </tr>
+                  <tr>
+                    <td>Leones</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>15</td>
+                    <td>9</td>
+                    <td>+6</td>
+                    <td>18</td>
+                  </tr>
+                  <tr>
+                    <td>Estrellas Rojas</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>16</td>
+                    <td>14</td>
+                    <td>+2</td>
+                    <td>17</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
-        <div class="fixture">
-          <h5>Fecha 11</h5>
-          <h2>Fixture</h2>
-          <div class="tabla-fixture">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th>Equipos</th>
-                  <th>Hora</th>
-                  <th>Cancha</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Equipo 1 vs Equipo 3</td>
-                  <td>14:00 hs.</td>
-                  <td>Cancha 1</td>
-                </tr>
-                <tr>
-                  <td>Equipo 2 vs Equipo 4</td>
-                  <td>15:00 hs.</td>
-                  <td>Cancha 2</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="fixture">
+            <h2>Fixture</h2>
+            <h5>Fecha 11</h5>
+            <div class="tabla-fixture">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Equipos</th>
+                    <th>Hora</th>
+                    <th>Cancha</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tigres vs Leones</td>
+                    <td>14:00 hs.</td>
+                    <td>Cancha 1</td>
+                  </tr>
+                  <tr>
+                    <td>Halcones vs Estrellas Rojas</td>
+                    <td>15:00 hs.</td>
+                    <td>Cancha 2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer>
       <p>&copy; 2024 Liga X. Todos los derechos reservados.</p>
-      <!-- agregar redes con logo y link -->
+      <div class="footer-redes">
+        <a href="https://facebook.com/" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -9,17 +9,23 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="logo">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../images/logo.png" alt="Logo de la Liga X" />
-          </a>
-        </div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            class="imagen-zoom"
+            src="../images/logo.png"
+            alt="Logo de la Liga X"
+          />
+        </a>
         <button
-          class="navbar-toggler custom-navbar-toggler"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -48,17 +54,13 @@
                 Torneos
               </a>
               <div
-                class="dropdown-menu custom-dropdown-menu"
+                class="dropdown-menu"
                 aria-labelledby="navbarDropdownTorneos"
               >
-                <a
-                  class="dropdown-item custom-dropdown-item"
-                  href="torneo-lunes.html"
+                <a class="dropdown-item" href="torneo-lunes.html"
                   >Torneo Lunes</a
                 >
-                <a
-                  class="dropdown-item custom-dropdown-item"
-                  href="torneo-sabado.html"
+                <a class="dropdown-item" href="torneo-sabado.html"
                   >Torneo Sábado</a
                 >
               </div>
@@ -76,34 +78,94 @@
         </div>
       </nav>
     </header>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <main>
       <div class="galeria">
         <h2>Galería</h2>
         <!-- se va a modificar para poder elegir de que torneo ver fotos -->
         <h5>Fecha 1</h5>
-        <!-- agregar link a Drive con todas la fotos -->
-        <div class="imagenes">
-          <img src="../images/imagen1.jpg" alt="Imagen 1" />
-          <img src="../images/imagen2.jpg" alt="Imagen 2" />
-          <img src="../images/imagen3.jpg" alt="Imagen 3" />
-          <img src="../images/imagen4.jpg" alt="Imagen 4" />
-        </div>
+        <p>
+          Estas son algunas de las fotos de la Fecha 1 Disputada el Lunes
+          pasado. Recuerda que para ver todas las fotos y encontrar las fotos de
+          tu equipo podes ingresar al drive con todas las fotos haciendo click
+          en cualquiera de las fotos!
+        </p>
+        <a
+          class="imagenes"
+          href="https://www.google.com/intl/es_ar/drive/"
+          target="_blank"
+        >
+          <img
+            class="imagen-zoom"
+            src="../images/imagen1.png"
+            alt="imagen 1 fecha 1"
+          />
+          <img
+            class="imagen-zoom"
+            src="../images/imagen2.png"
+            alt="imagen 2 fecha 2"
+          />
+          <img
+            class="imagen-zoom"
+            src="../images/imagen3.png"
+            alt="imagen 3 fecha 3"
+          />
+          <img
+            class="imagen-zoom"
+            src="../images/imagen4.png"
+            alt="imagen 4 fecha 4"
+          />
+        </a>
         <h5>Fecha 2</h5>
-        <!-- agregar link a Drive con todas la fotos -->
-        <div class="imagenes">
-          <img src="../images/imagen5.jpg" alt="Imagen 5" />
-          <img src="../images/imagen6.jpg" alt="Imagen 6" />
-          <img src="../images/imagen7.jpg" alt="Imagen 7" />
-          <img src="../images/imagen8.jpg" alt="Imagen 8" />
-        </div>
+        <p>
+          Estas son algunas de las fotos de la Fecha 2 Disputada el Sábado
+          pasado. Recuerda que para ver todas las fotos y encontrar las fotos de
+          tu equipo podes ingresar al drive con todas las fotos en el siguiente
+          enlace:
+        </p>
+        <a
+          class="imagenes"
+          href="https://www.google.com/intl/es_ar/drive/"
+          target="_blank"
+        >
+          <img
+            class="imagen-zoom"
+            src="../images/imagen5.png"
+            alt="imagen 5 fecha 2"
+          />
+          <img
+            class="imagen-zoom"
+            src="../images/imagen6.png"
+            alt="imagen 6 fecha 2"
+          />
+          <img
+            class="imagen-zoom"
+            src="../images/imagen7.png"
+            alt="imagen 7 fecha 7"
+          />
+          <img
+            class="imagen-zoom"
+            src="../images/imagen8.png"
+            alt="imagen 8 fecha 8"
+          />
+        </a>
       </div>
     </main>
     <footer>
       <p>&copy; 2024 Liga X. Todos los derechos reservados.</p>
-      <!-- agregar redes con logo y link -->
+      <div class="footer-redes">
+        <a href="https://facebook.com/" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
