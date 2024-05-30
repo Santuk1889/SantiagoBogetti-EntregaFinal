@@ -1,103 +1,268 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2; /* fondo en gris claro */
-  color: #333; /* texto en gris oscuro */
-  margin: 0;
+  background-color: white;
+  color: gray;
+  margin: 0px;
+  padding: 0px;
+}
+body h2 {
+  color: #23d6e8;
+}
+body h5 {
+  color: #000000;
+}
+
+header img {
+  max-width: 120px;
   padding: 0;
+  border-radius: 10px;
 }
-h2 {
-  color: #23d6e8; /* encabezados */
+header .navbar {
+  background-color: black;
 }
-h5 {
-  color: #000000; /* subtítulos */
+header .navbar .nav-link {
+  color: white;
 }
-
-/* navbar de boostrap customizado */
-.logo img {
-  max-width: 120px; /* logo tamaño */
-}
-.custom-navbar {
-  background-color: #000000;
-}
-.custom-navbar.navbar .navbar-brand,
-.custom-navbar.navbar .navbar-nav .nav-link {
-  color: #ffffff;
-}
-.custom-navbar.navbar .navbar-brand:hover,
-.custom-navbar.navbar .navbar-nav .nav-link:hover {
+header .navbar .nav-link:hover {
   color: #23d6e8;
 }
-
-/* secccion torneos igual que nav principal */
-.custom-dropdown-menu.dropdown-menu,
-.custom-dropdown-item.dropdown-item {
-  background-color: #000000;
-  color: #ffffff;
+header .navbar .dropdown-menu,
+header .navbar .dropdown-item {
+  background-color: black;
+  color: white;
 }
-.custom-dropdown-menu.dropdown-menu:hover,
-.custom-dropdown-item.dropdown-item:hover {
-  background-color: #000000;
+header .navbar .dropdown-menu:hover,
+header .navbar .dropdown-item:hover {
+  background-color: black;
   color: #23d6e8;
 }
-
-/* cambios menu hamburguesa version pantallas peq */
-.custom-navbar-toggler.navbar-toggler {
+header .navbar .navbar-toggler {
   border-color: #23d6e8;
-  color: #fff;
+  color: white;
   padding: 10px 20px;
 }
-.custom-navbar-toggler.navbar-toggler:hover {
+header .navbar .navbar-toggler:hover {
   background-color: #23d6e8;
 }
 
-/* stlye footer */
 footer {
-  background-color: #23d6e8; /* backg footer */
-  color: #fff;
-  padding: 60px 20px;
+  background-color: #23d6e8;
+  color: white;
+  padding: 60px;
   text-align: center;
 }
-/* grid pages y otro */
-.noticias-grid,
-.nosotros-grid,
-.torneos-grid,
-.contacto-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
-}
 
-.noticias,
-.galeria {
-  padding: 20px;
-}
-.noticia {
-  border: 1px solid #ccc; /* brde de las noticias */
-  padding: 20px;
-}
-
-.noticia img {
-  width: 100%;
-}
-
-.imagenes {
+.noticias {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40px;
+}
+@media screen and (max-width: 768px) {
+  .noticias {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .noticias {
+    padding: 10px;
+  }
 }
 
-.imagenes img {
-  width: calc(25% - 10px); /* 25% del ancho menos el espacio entre imgs */
-  margin-bottom: 20px;
+.torneos {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+@media screen and (max-width: 768px) {
+  .torneos {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .torneos {
+    padding: 10px;
+  }
 }
 
 .nosotros {
-  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
 }
-/* estructura torneos y tablas */
+@media screen and (max-width: 768px) {
+  .nosotros {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nosotros {
+    padding: 10px;
+  }
+}
+
+.galeria {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+@media screen and (max-width: 768px) {
+  .galeria {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .galeria {
+    padding: 10px;
+  }
+}
+
+.contacto {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+@media screen and (max-width: 768px) {
+  .contacto {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacto {
+    padding: 10px;
+  }
+}
+
+.noticias-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .noticias-grid {
+    grid-template-columns: 2fr;
+    gap: 0em;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .noticias-grid {
+    grid-template-columns: 1fr;
+    gap: 0em;
+    padding: 0px;
+  }
+}
+
+.torneos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .torneos-grid {
+    grid-template-columns: 2fr;
+    gap: 0em;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .torneos-grid {
+    grid-template-columns: 1fr;
+    gap: 0em;
+    padding: 0px;
+  }
+}
+
+.nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .nosotros-grid {
+    grid-template-columns: 2fr;
+    gap: 0em;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+    gap: 0em;
+    padding: 0px;
+  }
+}
+
+.imagenes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .imagenes {
+    grid-template-columns: 2fr;
+    gap: 0em;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .imagenes {
+    grid-template-columns: 1fr;
+    gap: 0em;
+    padding: 0px;
+  }
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .contacto-grid {
+    grid-template-columns: 2fr;
+    gap: 0em;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    gap: 0em;
+    padding: 0px;
+  }
+}
+
+.noticias img,
+.nosotros img,
+.imagenes img {
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.imagen-zoom {
+  transition: transform 0.3s ease;
+  border-radius: 30x;
+}
+.imagen-zoom:hover {
+  transform: scale(1.1);
+}
+
 .tabla-posiciones {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -106,6 +271,7 @@ footer {
   margin: 0 auto;
   overflow-x: auto;
 }
+
 .tabla-posiciones th,
 .tabla-posiciones td,
 .fixture th,
@@ -115,21 +281,64 @@ footer {
   text-align: center;
 }
 
-/* mq para pantallas pequeñas */
-@media (max-width: 768px) {
-  .torneos-grid,
-  .noticias-grid,
-  .nosotros-grid {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .imagenes img {
-    width: 100%;
-    height: auto;
-  }
-  .torneos-grid {
-    padding-left: 0px;
-    padding-right: 0px;
+.boton-std {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  background-color: #23d6e8;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin: 20px;
+}
+.boton-std:hover {
+  background-color: black;
+}
+
+.footer-redes a i {
+  font-size: 30px;
+  color: white;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  border-radius: 30x;
+}
+.footer-redes a i:hover {
+  transform: scale(1.1);
+}
+
+.contacto-redes a i {
+  font-size: 120px;
+  color: #23d6e8;
+  margin-right: 30px;
+  transition: transform 0.3s ease;
+  border-radius: 30x;
+}
+.contacto-redes a i:hover {
+  transform: scale(1.1);
+}
+
+.contacto-redes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+@media screen and (max-width: 768px) {
+  .contacto-redes {
+    padding: 10px;
   }
 }
+@media screen and (max-width: 480px) {
+  .contacto-redes {
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

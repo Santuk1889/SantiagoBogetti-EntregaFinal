@@ -9,17 +9,23 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="logo">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Logo de la Liga X" />
-          </a>
-        </div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+          <img
+            class="imagen-zoom"
+            src="images/logo.png"
+            alt="Logo de la Liga X"
+          />
+        </a>
         <button
-          class="navbar-toggler custom-navbar-toggler"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -48,17 +54,13 @@
                 Torneos
               </a>
               <div
-                class="dropdown-menu custom-dropdown-menu"
+                class="dropdown-menu"
                 aria-labelledby="navbarDropdownTorneos"
               >
-                <a
-                  class="dropdown-item custom-dropdown-item"
-                  href="pages/torneo-lunes.html"
+                <a class="dropdown-item" href="pages/torneo-lunes.html"
                   >Torneo Lunes</a
                 >
-                <a
-                  class="dropdown-item custom-dropdown-item"
-                  href="pages/torneo-sabado.html"
+                <a class="dropdown-item" href="pages/torneo-sabado.html"
                   >Torneo Sábado</a
                 >
               </div>
@@ -77,60 +79,97 @@
       </nav>
     </header>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <main>
       <div class="noticias">
-        <h2>Últimas noticias</h2>
+        <h2 class="zoom">Liga X</h2>
         <div class="noticias-grid">
           <div class="noticia">
-            <h5>Título de la noticia 1</h5>
-            <img src="images/noticia1.jpg" alt="Noticia 1" />
+            <h5>Torneo de los Sábados por la Tarde</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              dignissimos molestias perspiciatis laboriosam sed vel illo
-              quibusdam sapiente, quas, accusamus asperiores, assumenda
-              voluptates! Voluptatum culpa, reiciendis dolorum nemo iure
-              sapiente?
+              Ideal para disfrutar del fin de semana, el torneo de los sábados
+              por la tarde ofrece partidos llenos de energía y emoción. Es un
+              momento en que amigos y familias se reúnen para apoyar a sus
+              equipos favoritos y disfrutar de la camaradería que solo el fútbol
+              puede ofrecer.
             </p>
+            <a href="pages/torneo-sabado.html" target="_blank">
+              <img
+                class="imagen-zoom"
+                src="images/noticias1.png"
+                alt="noticia torneo sabado"
+              />
+            </a>
           </div>
           <div class="noticia">
-            <h5>Título de la noticia 2</h5>
-            <img src="images/noticia2.jpg" alt="Noticia 2" />
+            <h5>Torneo de los Lunes por la Noche</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              perferendis voluptatem, aspernatur similique facere doloremque
-              corporis, voluptates necessitatibus, et laborum magni expedita
-              quidem voluptas libero itaque iusto ducimus in? Cumque?
+              Diseñado para aquellos que buscan un inicio de semana lleno de
+              acción, nuestro torneo de los lunes por la noche reúne a equipos
+              que compiten bajo las estrellas. Es el lugar perfecto para liberar
+              el estrés del primer día de la semana y conectarse con otros
+              apasionados del fútbol.
             </p>
+            <a href="pages/torneo-lunes.html" target="_blank">
+              <img
+                class="imagen-zoom"
+                src="images/noticias2.png"
+                alt="noticia torneo lunes"
+              />
+            </a>
           </div>
           <div class="noticia">
-            <h5>Título de la noticia 3</h5>
-            <img src="images/noticia3.jpg" alt="Noticia 3" />
+            <h5>Jugador Revelación del Torneo</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam
-              ullam voluptatem rerum necessitatibus dolore consequatur iure enim
-              illum! Et nobis quod necessitatibus libero suscipit obcaecati
-              tempore consequatur a rerum!
+              La joven promesa Pablo Gómez se ha convertido en el jugador
+              revelación del torneo. Con solo 18 años, Gómez ha demostrado un
+              talento excepcional en el medio campo, asistiendo y anotando en
+              momentos cruciales para su equipo, las Estrellas Rojas. Los
+              entrenadores y aficionados están impresionados por su visión de
+              juego y su capacidad para cambiar el ritmo del partido.
             </p>
+            <img
+              class="imagen-zoom"
+              src="images/noticias3.png"
+              alt="noticia 1"
+            />
           </div>
           <div class="noticia">
-            <h5>Título de la noticia 4</h5>
-            <img src="images/noticia4.jpg" alt="Noticia 4" />
+            <h5>El Regreso Triunfal del Capitán</h5>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              numquam dolore magni facilis dolorum quas accusantium perferendis
-              qui assumenda! Qui odit aliquam odio corrupti ut facere! In
-              tempora maxime nobis?
+              Después de una lesión que lo mantuvo fuera de los terrenos de
+              juego por varios meses, el capitán de los Dragones, Roberto
+              Martínez, hizo un regreso triunfal. Martínez lideró a su equipo a
+              una contundente victoria de 3-0 contra los Guerreros, anotando dos
+              goles y asistiendo en otro. Su regreso ha levantado el ánimo del
+              equipo y de los seguidores, quienes esperan que esta sea una señal
+              de más éxitos por venir.
             </p>
+            <img
+              class="imagen-zoom"
+              src="images/noticias4.png"
+              alt="noticia 2"
+            />
           </div>
         </div>
       </div>
     </main>
     <footer>
       <p>&copy; 2024 Liga X. Todos los derechos reservados.</p>
-      <!-- agregar redes con logo y link -->
+      <div class="footer-redes">
+        <a href="https://facebook.com/" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

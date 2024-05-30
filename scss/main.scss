@@ -1,0 +1,126 @@
+@import "utilidades/variables";
+@import "utilidades/mixin";
+body {
+  font-family: $font-family-base;
+  background-color: white;
+  color: gray;
+  margin: $margin-no;
+  padding: $padding-no;
+
+  h2 {
+    color: $color-primary;
+  }
+  h5 {
+    color: $color-secondary;
+  }
+}
+
+header {
+  img {
+    @include img();
+  }
+  .navbar {
+    background-color: black;
+
+    .nav-link {
+      color: white;
+    }
+    .nav-link:hover {
+      color: $color-primary;
+    }
+    .dropdown-menu,
+    .dropdown-item {
+      background-color: black;
+      color: white;
+    }
+    .dropdown-menu:hover,
+    .dropdown-item:hover {
+      background-color: black;
+      color: $color-primary;
+    }
+    .navbar-toggler {
+      border-color: $color-primary;
+      color: white;
+      padding: 10px 20px;
+    }
+    .navbar-toggler:hover {
+      background-color: $color-primary;
+    }
+  }
+}
+
+footer {
+  background-color: $color-primary;
+  color: white;
+  padding: 60px;
+  text-align: center;
+}
+
+.noticias {
+  @include flex(flex, column, nowrap, center, center, 40px);
+}
+.torneos {
+  @include flex(flex, column, nowrap, center, center, 40px);
+}
+.nosotros {
+  @include flex(flex, column, nowrap, center, center, 40px);
+}
+.galeria {
+  @include flex(flex, column, nowrap, center, center, 40px);
+}
+.contacto {
+  @include flex(flex, column, nowrap, center, center, 40px);
+}
+
+.noticias-grid {
+  @include grid(2, 2em, center);
+}
+.torneos-grid {
+  @include grid(2, 2em, center);
+}
+.nosotros-grid {
+  @include grid(2, 2em, left);
+}
+.imagenes {
+  @include grid(4, 2em, center);
+}
+.contacto-grid {
+  @include grid(2, 2em, left);
+}
+.noticias img,
+.nosotros img,
+.imagenes img {
+  @include img(100%, 10px, 30px);
+}
+
+.imagen-zoom {
+  @include zoom-hover(1.1, 0.3s, ease, 30x);
+}
+
+.tabla-posiciones {
+  @include tabla-posiciones-container(10px, 100px);
+}
+
+.tabla-posiciones th,
+.tabla-posiciones td,
+.fixture th,
+.fixture td {
+  @include tabla-elementos(#ccc, 0px, center);
+}
+
+.boton-std {
+  @include boton-std();
+  margin: 20px;
+}
+
+.footer-redes a i {
+  @include social-icon;
+  @include zoom-hover(1.1, 0.3s, ease, 30x);
+}
+.contacto-redes a i {
+  @include social-icon(120px, $color-primary, 30px);
+  @include zoom-hover(1.1, 0.3s, ease, 30x);
+}
+.contacto-redes {
+  @include flex(flex, row, wrap, center, center, 40px);
+}
