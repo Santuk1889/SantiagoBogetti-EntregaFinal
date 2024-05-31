@@ -57,44 +57,54 @@ footer {
 }
 
 .noticias {
-  @include flex(flex, column, nowrap, center, center, 40px);
+  @include flex(flex, column, nowrap, center, center, 50px 150px);
 }
 .torneos {
-  @include flex(flex, column, nowrap, center, center, 40px);
+  @include flex(flex, column, nowrap, center, center, 100px 150px);
 }
 .nosotros {
-  @include flex(flex, column, nowrap, center, center, 40px);
+  @include flex(flex, column, nowrap, center, center, 50px 150px);
 }
 .galeria {
-  @include flex(flex, column, nowrap, center, center, 40px);
+  @include flex(flex, column, nowrap, center, center, 50px 150px);
 }
 .contacto {
-  @include flex(flex, column, nowrap, center, center, 40px);
+  @include flex(flex, column, nowrap, center, center, 50px 150px);
 }
 
 .noticias-grid {
-  @include grid(2, 2em, center);
+  @include grid(2, 4em, center);
 }
 .torneos-grid {
-  @include grid(2, 2em, center);
+  @include grid(2, 6em, center);
 }
 .nosotros-grid {
   @include grid(2, 2em, left);
 }
+.nosotros-grid-fotos {
+  @include grid(1, 0em, left);
+}
 .imagenes {
-  @include grid(4, 2em, center);
+  @include grid(4, 0em, center);
+}
+.imagenes-nosotros-grid-fotos {
+  @include grid(3, 0em, center);
 }
 .contacto-grid {
   @include grid(2, 2em, left);
 }
-.noticias img,
-.nosotros img,
+.noticias img {
+  @include img(90%, 25px, 55px);
+}
+.nosotros img {
+  @include img(100%, 25px, 55px);
+}
 .imagenes img {
-  @include img(100%, 10px, 30px);
+  @include img(100%, 25px, 55px);
 }
 
 .imagen-zoom {
-  @include zoom-hover(1.1, 0.3s, ease, 30x);
+  @include zoom-hover(1.1, 0.2s, ease, 30x);
 }
 
 .tabla-posiciones {
@@ -115,7 +125,7 @@ footer {
 
 .footer-redes a i {
   @include social-icon;
-  @include zoom-hover(1.1, 0.3s, ease, 30x);
+  @include zoom-hover(1.2, 0.2s, ease, 30x);
 }
 .contacto-redes a i {
   @include social-icon(120px, $color-primary, 30px);

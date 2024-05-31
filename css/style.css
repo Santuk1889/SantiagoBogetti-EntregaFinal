@@ -57,16 +57,16 @@ footer {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 50px 150px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .noticias {
-    padding: 10px;
+    padding: 25px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600x) {
   .noticias {
-    padding: 10px;
+    padding: 5px;
   }
 }
 
@@ -75,16 +75,16 @@ footer {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 100px 150px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .torneos {
-    padding: 10px;
+    padding: 25px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600x) {
   .torneos {
-    padding: 10px;
+    padding: 5px;
   }
 }
 
@@ -93,16 +93,16 @@ footer {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 50px 150px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nosotros {
-    padding: 10px;
+    padding: 25px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600x) {
   .nosotros {
-    padding: 10px;
+    padding: 5px;
   }
 }
 
@@ -111,16 +111,16 @@ footer {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 50px 150px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .galeria {
-    padding: 10px;
+    padding: 25px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600x) {
   .galeria {
-    padding: 10px;
+    padding: 5px;
   }
 }
 
@@ -129,58 +129,58 @@ footer {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 50px 150px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .contacto {
-    padding: 10px;
+    padding: 25px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600x) {
   .contacto {
-    padding: 10px;
+    padding: 5px;
   }
 }
 
 .noticias-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2em;
+  gap: 4em;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .noticias-grid {
     grid-template-columns: 2fr;
-    gap: 0em;
-    padding: 0px;
+    gap: 2em;
+    padding: 5px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .noticias-grid {
     grid-template-columns: 1fr;
-    gap: 0em;
-    padding: 0px;
+    gap: 2em;
+    padding: 5px;
   }
 }
 
 .torneos-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2em;
+  gap: 6em;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .torneos-grid {
     grid-template-columns: 2fr;
-    gap: 0em;
-    padding: 0px;
+    gap: 2em;
+    padding: 5px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .torneos-grid {
     grid-template-columns: 1fr;
-    gap: 0em;
-    padding: 0px;
+    gap: 2em;
+    padding: 5px;
   }
 }
 
@@ -190,39 +190,81 @@ footer {
   gap: 2em;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nosotros-grid {
     grid-template-columns: 2fr;
-    gap: 0em;
-    padding: 0px;
+    gap: 2em;
+    padding: 5px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .nosotros-grid {
     grid-template-columns: 1fr;
-    gap: 0em;
-    padding: 0px;
+    gap: 2em;
+    padding: 5px;
+  }
+}
+
+.nosotros-grid-fotos {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 992px) {
+  .nosotros-grid-fotos {
+    grid-template-columns: 2fr;
+    gap: 2em;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nosotros-grid-fotos {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    padding: 5px;
   }
 }
 
 .imagenes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2em;
+  gap: 0em;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .imagenes {
     grid-template-columns: 2fr;
-    gap: 0em;
-    padding: 0px;
+    gap: 2em;
+    padding: 5px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .imagenes {
     grid-template-columns: 1fr;
-    gap: 0em;
-    padding: 0px;
+    gap: 2em;
+    padding: 5px;
+  }
+}
+
+.imagenes-nosotros-grid-fotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0em;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .imagenes-nosotros-grid-fotos {
+    grid-template-columns: 2fr;
+    gap: 2em;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .imagenes-nosotros-grid-fotos {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    padding: 5px;
   }
 }
 
@@ -232,31 +274,41 @@ footer {
   gap: 2em;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .contacto-grid {
     grid-template-columns: 2fr;
-    gap: 0em;
-    padding: 0px;
+    gap: 2em;
+    padding: 5px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .contacto-grid {
     grid-template-columns: 1fr;
-    gap: 0em;
-    padding: 0px;
+    gap: 2em;
+    padding: 5px;
   }
 }
 
-.noticias img,
-.nosotros img,
+.noticias img {
+  max-width: 90%;
+  padding: 25px;
+  border-radius: 55px;
+}
+
+.nosotros img {
+  max-width: 100%;
+  padding: 25px;
+  border-radius: 55px;
+}
+
 .imagenes img {
   max-width: 100%;
-  padding: 10px;
-  border-radius: 30px;
+  padding: 25px;
+  border-radius: 55px;
 }
 
 .imagen-zoom {
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
   border-radius: 30x;
 }
 .imagen-zoom:hover {
@@ -305,11 +357,11 @@ footer {
   font-size: 30px;
   color: white;
   margin-right: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
   border-radius: 30x;
 }
 .footer-redes a i:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .contacto-redes a i {
@@ -330,14 +382,14 @@ footer {
   align-items: center;
   padding: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .contacto-redes {
-    padding: 10px;
+    padding: 25px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600x) {
   .contacto-redes {
-    padding: 10px;
+    padding: 5px;
   }
 }
 
