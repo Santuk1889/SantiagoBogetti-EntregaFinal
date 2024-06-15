@@ -5,11 +5,17 @@ body {
   margin: 0px;
   padding: 0px;
 }
+body h1 {
+  color: #23d6e8;
+  font-size: 32px;
+}
 body h2 {
   color: #23d6e8;
+  font-size: 28px;
 }
-body h5 {
+body h3 {
   color: #000000;
+  font-size: 24px;
 }
 
 header img {
